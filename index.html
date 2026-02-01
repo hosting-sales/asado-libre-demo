@@ -4,96 +4,137 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Asado Libre — Demo web</title>
-
-  <!-- Evitar indexación (demo) -->
   <meta name="robots" content="noindex,nofollow" />
-
+  <meta name="theme-color" content="#0b0b0c" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Banner DEMO -->
   <div class="demo-banner">
-    DEMO GRATUITA — Web de ejemplo (no oficial). Contenido provisional.
+    DEMO GRATUITA — Web de ejemplo. Contenido provisional.
   </div>
 
-  <main class="wrap">
-    <!-- HERO -->
-    <header class="hero">
-      <img class="logo" src="assets/logo.png" alt="Asado Libre" />
-      <h1>Buffet libre de carnes argentinas a la parrilla en Fuenlabrada</h1>
+  <!-- HERO con imagen real -->
+  <header class="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__overlay" aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <img class="logo" src="./assets/logo.png" alt="Asado Libre" />
+
+      <h1>Buffet libre de carnes argentinas a la parrilla</h1>
       <p class="sub">
-        Una experiencia de asado argentino pensada para venir en familia o con amigos.
+        Sabor argentino, ambiente auténtico y una experiencia perfecta para grupos y familias.
       </p>
 
-      <div class="cta-row">
+      <div class="cta">
         <a class="btn" href="tel:+34664492739">📞 Llamar</a>
         <a class="btn btn-strong"
            href="https://wa.me/34664492739?text=Hola%20Asado%20Libre%2C%20me%20gustar%C3%ADa%20reservar%20una%20mesa."
            target="_blank" rel="noopener">💬 WhatsApp</a>
         <a class="btn"
-           href="https://www.google.com/maps/place/Asado+Libre+Madrid+Buffet+de+Carnes+Argentinas/@40.2825987,-3.7928155,16z/data=!4m15!1m8!3m7!1s0xd418b0b1f1174bb:0x2a8867d263b3a116!2sAsado+Libre+Madrid+Buffet+de+Carnes+Argentinas!8m2!3d40.2827112!4d-3.7928265!10e9!16s%2Fg%2F11mstrwr7p!3m5!1s0xd418b0b1f1174bb:0x2a8867d263b3a116!8m2!3d40.2827112!4d-3.7928265!16s%2Fg%2F11mstrwr7p?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D"
+           href="https://www.google.com/maps?q=C.%20de%20la%20Pl.%2C%2016%2C%2028944%20Fuenlabrada%2C%20Madrid"
            target="_blank" rel="noopener">📍 Cómo llegar</a>
       </div>
 
-      <div class="chips">
-        <span class="chip">🔥 Parrilla</span>
-        <span class="chip">🥩 Buffet libre</span>
-        <span class="chip">👨‍👩‍👧‍👦 Grupos y familias</span>
+      <div class="badges">
+        <span class="badge">🔥 Parrilla</span>
+        <span class="badge">🥩 Buffet libre</span>
+        <span class="badge">🎉 Ideal para celebraciones</span>
       </div>
-    </header>
 
-    <!-- CONCEPTO -->
-    <section class="card">
+      <div class="quick">
+        <div class="quick__item">
+          <div class="quick__k">Ubicación</div>
+          <div class="quick__v">Fuenlabrada · Madrid</div>
+        </div>
+        <div class="quick__item">
+          <div class="quick__k">Reserva</div>
+          <div class="quick__v">1 clic por WhatsApp</div>
+        </div>
+        <div class="quick__item">
+          <div class="quick__k">Experiencia</div>
+          <div class="quick__v">Auténtico estilo argentino</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <section class="section">
       <h2>El concepto</h2>
-      <ul class="bullets">
-        <li>Buffet libre de carnes a la parrilla con sabor argentino.</li>
-        <li>Ambiente inspirado en Argentina, ideal para celebraciones.</li>
-        <li>Información clara para que el cliente reserve en 1 clic desde el móvil.</li>
-      </ul>
-    </section>
+      <p class="lead">
+        Una web pensada para que el cliente entienda el restaurante en segundos y pueda contactar o reservar desde el móvil.
+      </p>
 
-    <!-- MENÚ -->
-    <section class="card">
-      <h2>Menú y precios</h2>
-      <p class="muted">Vista previa del menú (demo). En la web final se pondrá el menú en formato limpio y actualizable.</p>
-      <img class="menu" src="assets/menu.jpg" alt="Menú Asado Libre (demo)" />
-    </section>
-
-    <!-- HORARIOS -->
-    <section class="card">
-      <h2>Horarios</h2>
-      <div class="kv">
-        <div><strong>Lunes a Jueves</strong><span>12:00 – 16:00 · 20:00 – 23:30</span></div>
-        <div><strong>Viernes</strong><span>12:00 – 16:00 · 20:00 – 00:00</span></div>
-        <div><strong>Sábado</strong><span>12:00 – 00:00</span></div>
-        <div><strong>Domingo</strong><span>12:00 – 23:30</span></div>
+      <div class="grid">
+        <article class="card">
+          <h3>Buffet libre</h3>
+          <p>La propuesta explicada de forma clara, con lo esencial: experiencia, ambiente y valor.</p>
+        </article>
+        <article class="card">
+          <h3>Carnes a la parrilla</h3>
+          <p>Fotos grandes, apetitosas y organizadas para que “entre por los ojos”.</p>
+        </article>
+        <article class="card">
+          <h3>Contacto rápido</h3>
+          <p>Botones visibles y siempre accesibles: llamar, WhatsApp y cómo llegar.</p>
+        </article>
       </div>
-      <p class="muted">*Horarios orientativos en demo. Se confirmarán con el restaurante.</p>
     </section>
 
-    <!-- GALERÍA (cuando tengas fotos) -->
-    <section class="card">
+    <section class="section section--menu">
+      <div class="section__head">
+        <h2>Menú y precios</h2>
+        <p class="muted">En la web final, el menú se mostrará limpio y actualizado (no solo imagen).</p>
+      </div>
+      <div class="menu-card">
+        <img class="menu" src="./assets/menu.jpg" alt="Menú Asado Libre (demo)" />
+      </div>
+    </section>
+
+    <section class="section">
       <h2>Fotos</h2>
-      <p class="muted">Añade aquí 6–10 fotos reales (parrilla, buffet, interior, fachada).</p>
+      <p class="muted">Galería pensada para móvil: rápido, visual y elegante.</p>
       <div class="gallery">
-        <!-- Reemplaza estos placeholders por tus fotos reales -->
-        <div class="ph">Foto 1</div>
-        <div class="ph">Foto 2</div>
-        <div class="ph">Foto 3</div>
-        <div class="ph">Foto 4</div>
+        <img src="./assets/g1.jpg" alt="Foto 1" loading="lazy">
+        <img src="./assets/g2.jpg" alt="Foto 2" loading="lazy">
+        <img src="./assets/g3.jpg" alt="Foto 3" loading="lazy">
+        <img src="./assets/g4.jpg" alt="Foto 4" loading="lazy">
+        <img src="./assets/g5.jpg" alt="Foto 5" loading="lazy">
+        <img src="./assets/g6.jpg" alt="Foto 6" loading="lazy">
       </div>
     </section>
 
-    <!-- CTA FINAL -->
-    <section class="final">
-      <h2>¿Quieres que esta web sea la oficial?</h2>
-      <p>La publicamos con vuestras fotos, menú limpio, horarios confirmados y botón de reserva/contacto.</p>
-      <a class="btn btn-strong big"
-         href="https://wa.me/34TU_NUMERO?text=Hola%2C%20he%20visto%20la%20demo%20y%20quiero%20que%20hagamos%20la%20web%20oficial%20de%20Asado%20Libre."
-         target="_blank" rel="noopener">✅ Sí, quiero la web oficial</a>
-      <p class="legal">Aviso demo: esta página es una muestra de diseño y contenido provisional (no oficial).</p>
+    <section class="section">
+      <h2>Horarios</h2>
+      <div class="hours">
+        <div class="row"><strong>Lunes a Jueves</strong><span>12:00 – 16:00 · 20:00 – 23:30</span></div>
+        <div class="row"><strong>Viernes</strong><span>12:00 – 16:00 · 20:00 – 00:00</span></div>
+        <div class="row"><strong>Sábado</strong><span>12:00 – 00:00</span></div>
+        <div class="row"><strong>Domingo</strong><span>12:00 – 23:30</span></div>
+      </div>
+      <p class="note">*Horarios orientativos en demo. Se confirmarán con el restaurante.</p>
     </section>
+
+    <section class="cta-final">
+      <h2>¿Te imaginas a tus clientes viendo esto desde el móvil?</h2>
+      <p>
+        Esta es una demo visual. Si os encaja, se personaliza con vuestras fotos, textos definitivos y se publica como web oficial.
+      </p>
+      <a class="btn btn-strong big"
+         href="https://wa.me/34664492739?text=Hola%2C%20he%20visto%20la%20demo%20y%20quiero%20publicar%20la%20web%20oficial%20de%20Asado%20Libre."
+         target="_blank" rel="noopener">✅ Sí, quiero la web oficial</a>
+      <p class="legal">Aviso demo: muestra de diseño con contenido provisional. No es una web oficial del negocio.</p>
+    </section>
+
   </main>
+
+  <!-- Barra inferior sticky (móvil) -->
+  <nav class="sticky">
+    <a href="tel:+34664492739">📞</a>
+    <a href="https://wa.me/34664492739?text=Hola%20Asado%20Libre%2C%20me%20gustar%C3%ADa%20reservar%20una%20mesa." target="_blank" rel="noopener">💬</a>
+    <a href="https://www.google.com/maps?q=C.%20de%20la%20Pl.%2C%2016%2C%2028944%20Fuenlabrada%2C%20Madrid" target="_blank" rel="noopener">📍</a>
+  </nav>
 </body>
 </html>
-
